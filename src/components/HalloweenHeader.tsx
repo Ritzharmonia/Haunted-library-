@@ -21,12 +21,12 @@ export const HalloweenHeader: React.FC<HalloweenHeaderProps> = ({
 }) => {
   return (
     <header className="sticky top-0 z-50 bg-[#090B14]/95 backdrop-blur-md border-b border-slate-800/80 transition-colors">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-6">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-2 sm:gap-6">
         
         {/* Zone 1: Single text element wordmark */}
         <div className="flex items-center gap-1.5 min-w-0 flex-1 py-1">
-          <span className="text-slate-400 shrink-0 text-xs">✦</span>
-          <span className="text-[10px] min-[360px]:text-[11px] min-[400px]:text-xs sm:text-sm font-semibold tracking-tight sm:tracking-normal font-gothic text-slate-200 leading-tight line-clamp-2 sm:line-clamp-1">
+          <span className="text-slate-400 shrink-0 text-[10px] sm:text-xs">✦</span>
+          <span className="text-[10px] min-[360px]:text-[11px] sm:text-sm font-semibold font-gothic text-slate-200 leading-tight">
             Хатан хааны орхигдсон шилтгээн дэх адал явдал
           </span>
         </div>
