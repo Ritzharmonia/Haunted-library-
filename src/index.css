@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-gothic: "Cinzel", "Times New Roman", serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --color-gothic-midnight: #070913;
+  --color-gothic-purple: #1e132b;
+  --color-gothic-silver: #c5c8d6;
+  --color-gothic-cyan: #38bdf8;
+  --color-gothic-flame: #0ea5e9;
+}
+
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(1.5deg);
+  }
+}
+
+@keyframes floatReverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(10px) rotate(-2deg);
+  }
+}
+
+@keyframes candleFlicker {
+  0%, 100% {
+    opacity: 0.9;
+    filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.8)) drop-shadow(0 0 25px rgba(37, 99, 235, 0.6));
+    transform: scale(1);
+  }
+  25% {
+    opacity: 0.75;
+    filter: drop-shadow(0 0 8px rgba(56, 189, 248, 0.6)) drop-shadow(0 0 18px rgba(37, 99, 235, 0.4));
+    transform: scale(0.96) skewX(-1deg);
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 14px rgba(56, 189, 248, 0.95)) drop-shadow(0 0 32px rgba(37, 99, 235, 0.8));
+    transform: scale(1.04) skewX(1.5deg);
+  }
+  75% {
+    opacity: 0.82;
+    filter: drop-shadow(0 0 9px rgba(56, 189, 248, 0.7)) drop-shadow(0 0 20px rgba(37, 99, 235, 0.5));
+    transform: scale(0.98);
+  }
+}
+
+@keyframes mistDrift {
+  0% {
+    transform: translateX(-5%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(-5%);
+  }
+}
+
+@keyframes ghostBob {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-16px) rotate(2deg);
+  }
+}
+
+.animate-float-slow {
+  animation: floatSlow 5s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: floatReverse 6s ease-in-out infinite;
+}
+
+.animate-candle-flame {
+  animation: candleFlicker 2.2s infinite ease-in-out;
+}
+
+.animate-mist-drift {
+  animation: mistDrift 20s infinite ease-in-out;
+}
+
+.animate-ghost-bob {
+  animation: ghostBob 4s infinite ease-in-out;
+}
+
+/* Custom gothic scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #090b16;
+}
+::-webkit-scrollbar-thumb {
+  background: #252a42;
+  border-radius: 4px;
+  border: 1px solid #3e4766;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3b4566;
+}

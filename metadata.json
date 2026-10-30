@@ -1,0 +1,6 @@
+{
+  "name": "Хатан хааны орхигдсон шилтгээн дэх адал явдал",
+  "description": "Либертиа хатан хааны 3-р он: Орхигдсон шилтгээний Сүнстэй номын сан ба нууц хаалганы интерактив адал явдалт тоглоом.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
